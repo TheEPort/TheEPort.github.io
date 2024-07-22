@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - Eli's Boxing Gym</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#toggleDetails").click(function(){
+                $("#classDetails").toggle();
+            });
+        });
+    </script>
+</head>
+<body class>
+    <!-- Eli's Boxing Gym Classes Page -->
+    <header>
+        <h1>Our Classes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="Sign-up.html">Sign-Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Boxing Classes</h2>
+        <img src="boxing_class.jpg" alt="Boxing Class" style="width:100%;max-width:600px"><!--Not my Image-->
+        <button id="toggleDetails">Toggle Class Details</button>
+        <div id="classDetails" style="display:none;">
+            <h3>Class Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Class Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>6:00 PM - 7:00 PM</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>6:00 PM - 7:00 PM</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>6:00 PM - 7:00 PM</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00 AM - 11:00 AM</td>
+                        <td>All Levels</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10:00 AM - 11:00 AM</td>
+                        <td>All Levels</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Eli's Boxing Gym</p>
+    </footer>
+</body>
+</html>
